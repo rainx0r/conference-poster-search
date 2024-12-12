@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +7,16 @@
     <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <label for="modelProviderInput">Model Provider</label>
+    <select id="modelProviderInput">
+      <option value="ANTHROPIC">Anthropic</option>
+      <option value="GOOGLE">Google</option>
+      <option value="OPENAI" selected>OpenAI</option>
+    </select>
+    <!--  TODO: this should be another dropdown dependent on model provider  -->
+    <label for="modelInput">Model</label>
+    <input type="text" id="modelInput" placeholder="Provide the model name to use"/>
+    <label for="apiKeyInput">API Key</label>
+    <input type="password" id="apiKeyInput" placeholder="Enter your LLM API key"/>
 </body>
 </html>

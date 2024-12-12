@@ -3,11 +3,19 @@
 }
 
 body {
-    width: 100px;
+    width: 200px;
     padding: 10px;
 
     font-family: system-ui;
-    text-align: center;
+    text-align: start;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#apiKeyInput {
+    width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
